@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Welcome page</title>
 </head>
 <body>
 <%
@@ -14,11 +14,8 @@
 		response.sendRedirect("login.jsp");
 	}
 %>
-    Welcome ${uname}
-    <br>
-    
-    <a href="videos.jsp">Videos here</a>
-
+    <h2 style="color:brown;"> Welcome to your space, ${uname}! </h2>
+    <h3>><a href="videos.jsp">Find your PlayList here</a></h3>
     <form action="Logout">
     <input type="submit" value="Logout">
     </form>
